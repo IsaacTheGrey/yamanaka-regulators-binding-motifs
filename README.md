@@ -1,6 +1,11 @@
 # yamanaka-regulators-binding-motifs
 Searching for binding motifs of regulators of Yamanaka factors
 
+How to proceed:
+1. Get the genomic loci of the yamanaka factors (10 kb before and after the gene)
+2. make a bed file with the genomic loci
+3. get the motifs of interest as PWM format or as a consensus 
+4. run a script for the identification of these motifs
 
 Yamanaka regulators: npm & srrt
 
@@ -31,3 +36,5 @@ Npm essential for myc nucleolar localisation (https://doi-org.uaccess.univie.ac.
 To do: 
 predict npm in alphafold, c-terminus like human npm, binds 4G?
 Check myc XLOC-004670 locus for 4G 
+
+
