@@ -19,13 +19,6 @@ mamba install -c conda-forge jupyterlab matplotlib pandas pyfaidx
 - A list of target regions in the script (`gene`, `chrom`, `center`, `window`)
 - A list of motifs to scan (consensus sequences)
 
-How to proceed:
-1. Get the genomic loci of the yamanaka factors (10 kb before and after the gene)
-2. make a bed file with the genomic loci
-3. get the motifs of interest as PWM format or as a consensus 
-4. run a script for the identification of these motifs
-
-
 ### 📂 Outputs
 
 All results will be written to the motif_plots/ folder:
