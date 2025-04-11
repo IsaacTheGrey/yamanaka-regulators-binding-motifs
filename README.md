@@ -1,15 +1,37 @@
 # yamanaka-regulators-binding-motifs
-Searching for binding motifs of regulators of Yamanaka factors
+This project scans genomic regions for known DNA motifs (with optional mismatches) and visualizes the results.
 
-How to proceed:
-1. Get the genomic loci of the yamanaka factors (10 kb before and after the gene)
-2. make a bed file with the genomic loci
-3. get the motifs of interest as PWM format or as a consensus 
-4. run a script for the identification of these motifs
+## Usage
+### 🛠 Environment Setup
+
+Reccomended to use **Mamba** (a faster Conda replacement).
+
+#### 1. Install Mamba (if needed)
+```bash
+conda install -n base -c conda-forge mamba
+mamba create -n motifscan
+mamba activate motifscan
+mamba install -c conda-forge jupyterlab matplotlib pandas pyfaidx
+```
+
+### 📁 Inputs
+- A reference genome in FASTA format to put in the folder /references
+- A list of target regions in the script (`gene`, `chrom`, `center`, `window`)
+- A list of motifs to scan (consensus sequences)
+
+### 📂 Outputs
+
+All results will be written to the motif_plots/ folder:
+
+    *.tsv: tabular motif hit reports
+    *.png: per-gene motif hit plots (Visualization colors: blue = forward strand, red = reverse strand)
+
+
+
+
+## Example case
 
 Yamanaka regulators: npm & srrt
-
-
 
 srrt XLOC-0404390
 MF-dependently expressed 12hpa 
@@ -20,9 +42,6 @@ To do:
 predict srrt in alphafold, compare to mouse ars2
 Check sox1b1 XLOC-064106 locus for ars2 binding motif
 GTTAAGCAAATTAAATTTGATTCT
-
-
-
 
 
 
