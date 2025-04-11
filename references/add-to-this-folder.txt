@@ -1,0 +1,1 @@
+Add the reference genome that you want to use to this folder
